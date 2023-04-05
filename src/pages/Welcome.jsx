@@ -17,7 +17,7 @@ const Signup = () => {
                 <h4 className='text-center'>Watch Anywhere. Cancel Anytime.</h4>
                 <h6>Ready to watch? Enter your email to create or renew membership.</h6>
             </div>
-            <form className='d-flex mt-5 w-100 justify-content-center align-items-center' action="">
+            <form className='d-flex mt-3 w-100 justify-content-center align-items-center' action="">
                 <div id='input-container'>
                     <Form.Group>
                         <Form.Control id='input-text' className="py-3" type="email" placeholder="Email" />
