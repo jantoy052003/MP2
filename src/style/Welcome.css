@@ -61,15 +61,16 @@
     color: #00b3ff;
 }
 
-#input-info {
-  border: 0;
-  background: rgba(39, 34, 60, 0.85);
-  outline: none;
-  color: white;
-  transition: 0.5s;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-right: 10px;
-  width: 500px;
+#input-container {
+    width: 400px;
+    margin-right: 5px;
 }
 
+#input-text {
+    border: 0;
+    background: rgba(39, 34, 60, 0.85);
+    outline: none;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}

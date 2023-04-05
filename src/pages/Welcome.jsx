@@ -1,7 +1,7 @@
 import '../style/Welcome.css'
 import collageBG from '../assets/netflix-collage.jpg'
 import Logo from '../assets/MP2-logo.png'
-import Button from 'react-bootstrap/Button';
+import { Form, Button } from 'react-bootstrap'
 
 const Signup = () => {
   return (
@@ -17,15 +17,13 @@ const Signup = () => {
                 <h4 className='text-center'>Watch Anywhere. Cancel Anytime.</h4>
                 <h6>Ready to watch? Enter your email to create or renew membership.</h6>
             </div>
-            <form className='d-flex flex-column p-3 w-100' action="">
-                <div className='d-flex justify-content-center'>
-                    <input id='input-info' className='p-3'
-                    type="email"
-                    placeholder='Email Address'
-                    name='email' 
-                    />
-                    <Button href='/login' className='py-3'>GET STARTED</Button>
+            <form className='d-flex mt-5 w-100 justify-content-center align-items-center' action="">
+                <div id='input-container'>
+                    <Form.Group>
+                        <Form.Control id='input-text' className="py-3" type="email" placeholder="Email" />
+                    </Form.Group>
                 </div>
+                <Button href='/login' className="py-3">GET STARTED</Button>
             </form>
         </div>
     </div>
