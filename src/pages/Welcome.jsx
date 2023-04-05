@@ -9,7 +9,7 @@ const Signup = () => {
         <img src={collageBG} alt="" />
         <div id='header-1' className='d-flex w-100'>
             <img src={Logo} alt="Logo" className='mt-3' />
-            <Button id='btn' className='py-2 mt-5'>Sign In</Button>
+            <Button href='/login' id='btn' className='py-2 mt-5'>Sign In</Button>
         </div>
         <div className='d-flex align-items-center justify-content-center'> 
             <div className='d-flex flex-column text-white'>
