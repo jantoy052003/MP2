@@ -1,0 +1,24 @@
+:root {
+    --primary: #00b3ff;
+    --dark: #16161D;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    background: transparent;
+    position: fixed;
+    z-index: 10;
+}
+
+#header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
