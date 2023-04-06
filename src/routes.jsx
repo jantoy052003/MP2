@@ -17,7 +17,7 @@ const routes = [
     element: <Login />
   },
   {
-    path: "/",
+    path: "*",
     element: <Nav />,
     children: [
       {

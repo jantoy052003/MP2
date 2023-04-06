@@ -1,8 +1,3 @@
-:root {
-    --primary: #00b3ff;
-    --dark: #16161D;
-}
-
 body {
     box-sizing: border-box;
     margin: 0;
@@ -11,8 +6,10 @@ body {
 }
 
 #header {
-    background: transparent;
+    width: 100%;
     position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.20rem);
     z-index: 10;
 }
 
@@ -21,4 +18,22 @@ body {
     height: 50px;
     margin-right: 50px;
     margin-left: 50px;
+}
+
+#home {
+    width: 100%;
+    height: 250vh;
+    background: #16161D;
+}
+
+#video-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-frame {
+    position: absolute;
+    top: -100px;
 }
