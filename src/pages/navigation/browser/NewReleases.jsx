@@ -2,7 +2,7 @@
 
 const NewReleases = () => {
   return (
-    <div>
+    <div id="newreleases" className="pt-5">
       New Releases
     </div>
   )

@@ -7,7 +7,7 @@ const Nav = () => {
     <>
       <Header />
       <Routes>
-          {routes[2].children.map((route, index) => {
+          {routes[1].children.map((route, index) => {
             return <Route key={index} path={route.path} element={route.element} exact />
           })}
       </Routes>

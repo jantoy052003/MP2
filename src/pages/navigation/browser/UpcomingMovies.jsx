@@ -2,7 +2,7 @@
 
 const UpcomingMovies = () => {
   return (
-    <div>
+    <div id="upcomingmovies" className="pt-5">
       Upcoming Movies
     </div>
   )

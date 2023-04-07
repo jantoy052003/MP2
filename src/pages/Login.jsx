@@ -29,7 +29,7 @@ const Login = () => {
         </Form>
         <div className='d-flex justify-content-center mt-5'>
           <Form.Text id="passwordHelpBlock" muted>
-            Don't have an account? <span id='sign-up' className='fw-bold'>Sign up now.</span>
+            Don't have an account? <span href='/signup' id='sign-up' className='fw-bold'>Sign up now.</span>
           </Form.Text>
         </div>
       </div>
