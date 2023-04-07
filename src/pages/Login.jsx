@@ -14,11 +14,11 @@ const Login = () => {
         <Form className='px-5'>
           <h3 id='sign-in' className='p-1 mb-5'>Sign In</h3>
           <Form.Group className="mb-3">
-            <Form.Control id='input-text' type="email" placeholder="Email" />
+            <Form.Control id='input-email' type="email" placeholder="Email" />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Control id='input-text' type="password" placeholder="Password" />
+            <Form.Control id='input-password' type="password" placeholder="Password" />
           </Form.Group>
           <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Remember me" />
