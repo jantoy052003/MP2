@@ -11,11 +11,19 @@ body {
     align-items: center;
     height: 50px;
     color: white;
+    z-index: 10;
 }
 
 #header-nav {
     color: white;
     position: relative;
+    text-shadow: 0 0 20px black,
+    0 0 40px black,
+    0 0 80px black,
+    0 0 160px black,
+    0 0 320px black,
+    0 0 640px black,
+    0 0 1280px black;
 }
 
 #header-nav::after {
@@ -77,4 +85,3 @@ body {
     color: white;
     background: #16161D;
 }
-

@@ -1,22 +1,29 @@
 .list {
     width: 100%;
-    margin-top: 10px;
-    overflow: hidden;
+    margin-bottom: 25px;
+    overflow: visible;
 }
+
 .list .listTitle {
     color: white;
-    font-size: 20px;
-    font-weight: 500;
     margin-left: 50px;
 }
+
+.listTitle > img {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
 .list .wrapper {
     position: relative;
 }
+
 .list .wrapper .sliderArrow {
     width: 50px;
     height: 100%;
-    background-color: rgb(22, 22, 22, 0.5);
-    color: rgb(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(.20rem); 
     position: absolute;
     z-index: 99;
     top: 0;
@@ -24,12 +31,25 @@
     margin: auto;
     cursor: pointer;
 }
+
 .list .wrapper .sliderArrow.left {
     left: 0;
+    opacity: 0;
 }
+
+.list .wrapper .sliderArrow.left:hover {
+    opacity: 1;
+}
+
 .list .wrapper .sliderArrow.right {
     right: 0;
+    opacity: 0;
 }
+
+.list .wrapper .sliderArrow.right:hover {
+    opacity: 1;
+}
+
 .list .wrapper .container {
     margin-left: 50px;
     display: flex;

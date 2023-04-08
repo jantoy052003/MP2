@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import "../list/list.css"
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons';
 import Top10Items from "../listItem/Top10Items"
+import Top10 from '../../../assets/top-10-w.png'
 
 const Top10List = () => {
 
@@ -28,11 +29,10 @@ const Top10List = () => {
 
   return (
     <div className="list">
-      <span className="listTitle">Top 10 Movies</span>
+      <span className="listTitle"><img src={Top10} alt="" /></span>
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
-            <div className="container" ref={listRef}>
-              
+            <div className="container" ref={listRef}>             
               <Top10Items/>
             </div>
         <ArrowForwardIosOutlined className="sliderArrow right" onClick={()=>handleClick("right")}/>

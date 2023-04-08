@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import "./list.css"
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons';
 import HorrorItems from "../listItem/HorrorItems"
+import HorrorCat from '../../../assets/horror.png'
 
 const Horror = () => {
 
@@ -28,7 +29,7 @@ const Horror = () => {
 
   return (
     <div className="list">
-      <span className="listTitle">Horror</span>
+      <span className="listTitle"><img src={HorrorCat} alt="" /></span>
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
             <div className="container" ref={listRef}>

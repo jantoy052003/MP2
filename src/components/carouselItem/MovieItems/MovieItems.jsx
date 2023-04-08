@@ -11,7 +11,7 @@ const MovieItems = ({movie}, props) => {
 
   return (
     <div className='cardsContainer'>
-      <Card style={{ width: '8rem' }} className= " image mx-1 my-3 p-0 rounded-5 bg-transparent">
+      <Card style={{ width: '10rem' }} className= " image mx-1 p-0 rounded-5 bg-transparent">
          <Card.Img className='rounded-3' variant="top" src={`https://image.tmdb.org/t/p/w500/`+ movie.poster_path} onClick={() => setLgShow(true)} /> 
       </Card>
       <Modal
