@@ -22,25 +22,12 @@ const MovieCards = ({movie}) => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div id='modal-video'>
-            <YoutubeEmbed embedId={movie.key} />
-          </div>
+          <YoutubeEmbed embedId={movie.key} />
           <div className='py-3'>
             {movie.overview}
           </div>
         </Modal.Body>
       </Modal>
-        {/*<Card id='card-container' style={{ width: '230px' }} className= " cardsContainer mx-3 my-3">
-            <Card.Img id='movie-img' src={`https://image.tmdb.org/t/p/w500/`+ movie.poster_path} /> {/**completes the path to the poster */} 
-            {/*<Card.Body>
-                <Card.Title>{movie.original_title}</Card.Title>
-                <Card.Text>
-                    {movie.overview}
-                    {/* <YoutubeEmbed embedId={movie.key} /> */}
-                {/*</Card.Text>
-                {/*<Button>Watch Trailer{/* <Trailer movie={movie}/> */}{/*</Button>*/}
-            {/*</Card.Body> */}
-        {/*</Card>*/}
     </div>
   )
 }
