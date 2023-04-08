@@ -32,16 +32,18 @@ const Home = () => {
         <iframe id="video-frame" width="100%" height="900" src="https://www.youtube.com/embed/CZI5V2VRc7s?modestbranding=1&controls=0&autoplay=1&mute=0&rel=0&amp;clip=UgkxGzBsSYsP3XNlqKAf6LmM5pbmyQeXRUMG&amp;clipt=ELgwGN_wAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
       </div>
-      <Top10List/>
-      <Action/>
-      <Drama/>
-      <Comedy/>
-      <Fantasy/>
-      <Horror/>
-      <Mystery/>
-      <Romance/>
-      <Thriller/>
-      <Western/>
+      <div id='movie-carousel'>
+        <Top10List/>
+        <Action />
+        <Drama />
+        <Comedy />
+        <Fantasy />
+        <Horror />
+        <Mystery />
+        <Romance />
+        <Thriller />
+        <Western />
+      </div>
     </div>
   )
 }

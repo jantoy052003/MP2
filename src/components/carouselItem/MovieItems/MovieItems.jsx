@@ -1,38 +1,38 @@
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import "./movieItems.css"
-// import Trailer from '../Trailer';
 
-import Button from 'react-bootstrap/Button';
+// import Trailer from '../Trailer';
 import Modal from 'react-bootstrap/Modal';
 import YoutubeEmbed from "../YouTubeEmbed/YouTubeEmbed";
 
 const MovieItems = ({movie}, props) => {
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [lgShow, setLgShow] = useState(false);
 
   return (
     <div className='cardsContainer'>
-      <Card style={{ width: '8rem' }} className= " image mx-1 my-3 p-0 rounded-1 bg-dark" onClick={handleShow}>
-            <Card.Img className='' variant="top" src={`https://image.tmdb.org/t/p/w500/`+ movie.poster_path} /> 
+      <Card style={{ width: '8rem' }} className= " image mx-1 my-3 p-0 rounded-5 bg-transparent">
+         <Card.Img className='rounded-3' variant="top" src={`https://image.tmdb.org/t/p/w500/`+ movie.poster_path} onClick={() => setLgShow(true)} /> 
       </Card>
-      <Modal onClick={handleShow}  show={show} onHide={handleClose} {...props} size="md" centered >
-        <Modal.Body className='my-modal'>
-            {/* CARD MODAL TEST - pwede mong i-edit eto sir para magkamukha sila nung sa popular */}
-            <Card className='bg-dark' style={{ width: '470px', color: 'white' }} >
-            <YoutubeEmbed embedId={movie.key} />
-              <Card.Body >
-                <Card.Title>{movie.original_title}</Card.Title>
-                <Card.Text>{movie.overview}</Card.Text>
-              </Card.Body>
-          </Card>
-            {/* --------------- */}
+      <Modal
+        size="lg"
+        show={lgShow}
+        onHide={() => setLgShow(false)}
+        aria-labelledby="overview"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="overview">
+            {movie.original_title}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <YoutubeEmbed embedId={movie.key} />
+          <div className='py-3'>
+            {movie.overview}
+          </div>
         </Modal.Body>
       </Modal>
-    </div>
+  </div>
   )
 }
 

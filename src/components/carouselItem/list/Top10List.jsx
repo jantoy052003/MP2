@@ -32,6 +32,7 @@ const Top10List = () => {
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
             <div className="container" ref={listRef}>
+              
               <Top10Items/>
             </div>
         <ArrowForwardIosOutlined className="sliderArrow right" onClick={()=>handleClick("right")}/>
