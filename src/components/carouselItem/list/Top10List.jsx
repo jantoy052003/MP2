@@ -28,7 +28,7 @@ const Top10List = () => {
 
   return (
     <div className="list">
-      <span className="listTitle">Top 10</span>
+      <span className="listTitle">Top 10 Movies</span>
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
             <div className="container" ref={listRef}>

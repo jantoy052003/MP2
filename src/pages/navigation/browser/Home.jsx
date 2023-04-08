@@ -33,7 +33,9 @@ const Home = () => {
         </iframe>
       </div>
       <div id='movie-carousel'>
-        <Top10List/>
+        <div className='mb-5'>
+          <Top10List />
+        </div>
         <Action />
         <Drama />
         <Comedy />
