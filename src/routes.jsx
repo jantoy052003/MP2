@@ -10,14 +10,10 @@ import MyList from './pages/navigation/browser/MyList'
 const routes = [
   {
     path: "/",
-    element: <Welcome />
-  },
-  {
-    path: "/login",
     element: <Login />
   },
   {
-    path: "/",
+    path: "*",
     element: <Nav />,
     children: [
       {

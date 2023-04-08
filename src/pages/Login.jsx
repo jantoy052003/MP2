@@ -13,12 +13,12 @@ const Login = () => {
       <div id='login-form' className='d-flex flex-column justify-content-center border border-secondary rounded-4'>
         <Form className='px-5'>
           <h3 id='sign-in' className='p-1 mb-5'>Sign In</h3>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control id='input-text' type="email" placeholder="Email" />
+          <Form.Group className="mb-3">
+            <Form.Control id='input-email' type="email" placeholder="Email" />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control id='input-text' type="password" placeholder="Password" />
+          <Form.Group className="mb-3">
+            <Form.Control id='input-password' type="password" placeholder="Password" />
           </Form.Group>
           <Form.Group className="mb-3 text-white" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Remember me" />
@@ -29,7 +29,7 @@ const Login = () => {
         </Form>
         <div className='d-flex justify-content-center mt-5'>
           <Form.Text id="passwordHelpBlock" muted>
-            Don't have an account? <span id='sign-up' className='fw-bold'>Sign up now.</span>
+            Don't have an account? <span href='/signup' id='sign-up' className='fw-bold'>Sign up now.</span>
           </Form.Text>
         </div>
       </div>

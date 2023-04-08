@@ -1,75 +1,210 @@
-.welcome-container {
-    width: 100%;
-    height: 250vh;
-    position: relative;
-    background: linear-gradient(transparent, #16161D);
+@media only screen and (max-width: 1920px) {
+    .welcome-container {
+        width: 100%;
+        height: 250vh;
+        position: relative;
+        background: linear-gradient(transparent, #16161D);
+    }
+
+    .welcome-container > img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .welcome-container::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: -1;
+        position: absolute;
+    }
+
+    .welcome-container > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        z-index: 1;
+    }
+
+    #header-1 {
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 1;
+        position: relative;
+    }
+
+    #welcome-logo {
+        width: 75px;
+        height: 75px;
+        z-index: 1;
+        position: absolute;
+        align-self: flex-start;
+    }
+
+    #btn {
+        position: absolute;
+        align-self: flex-end;
+        margin-right: 50px;
+    }
+
+    #welcome-info {
+        height: 500px;
+        text-align: center;
+    }
+
+    #unli {
+        color: #00b3ff;
+    }
+
+    #input-container {
+        width: 400px;
+        margin-right: 5px;
+    }
+
+    #input-text {
+        border: 0;
+        background: rgba(39, 34, 60, 0.85);
+        outline: none;
+        color: white;
+        transition: 0.5s;
+        border: 1px solid transparent;
+    }
 }
 
-.welcome-container img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: contain;
-    position: absolute;
-    z-index: -2;
+
+
+/* === responsive css === */
+
+@media only screen and (max-width: 400px) {
+    .welcome-container {
+        width: 100%;
+        height: 250vh;
+        position: relative;
+        background: linear-gradient(transparent, #16161D);
+    }
+    .welcome-container > img {
+        top: 0;
+        left: 0;
+        height: 750px;
+        position: absolute;
+        object-fit: cover;
+        z-index: -2;
+    }
+    .welcome-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45vh;
+        z-index: 1;
+    }
+    #header-1 {
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 1;
+        position: relative;
+    }
+    #welcome-logo {
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        position: absolute;
+        align-self: flex-start;
+    }
+    #btn {
+        position: absolute;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    #welcome-info {
+        margin-top: 50px;
+        height:300px;
+        text-align: center;
+    }
+    .welcome-container form {
+        flex-direction: column;
+        height: 500px;
+    }
+    #input-container {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 350px;
+        height: 50px;
+    }
 }
 
-.welcome-container::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: -1;
-    position: absolute;
+@media only screen and (max-width: 991px) {
+    .welcome-container {
+        width: 100%;
+        height: 250vh;
+        position: relative;
+        background: linear-gradient(transparent, #16161D);
+    }
+    .welcome-container > img {
+        top: 0;
+        left: 0;
+        height: 1200px;
+        position: absolute;
+        object-fit: cover;
+        z-index: -2;
+    }
+    .welcome-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45vh;
+        z-index: 1;
+    }
+    #header-1 {
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 1;
+        position: relative;
+    }
+    #welcome-logo {
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        position: absolute;
+        align-self: flex-start;
+    }
+    #btn {
+        position: absolute;
+        align-self: flex-end;
+        margin-right: 50px;
+    }
+    #welcome-info {
+        margin-top: 50px;
+        height:250px;
+        text-align: center;
+    }
+    .welcome-container form {
+        height: 100px;
+    }
+    #input-container {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 350px;
+        height: 50px;
+    }
 }
-
-.welcome-container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-    z-index: 1;
-}
-
-#header-1 {
-    top: 0;
-    left: 0;
-    height: 50px;
-    z-index: 1;
-    position: relative;
-}
-
-#header-1 > img {
-    width: 75px;
-    height: 75px;
-    top: 0;
-    z-index: 1;
-    left: 200px;
-    position: absolute;
-}
-
-#btn {
-    right: 200px;
-    position: absolute;
-}
-
-#unli {
-    color: #00b3ff;
-}
-
-#input-info {
-  border: 0;
-  background: rgba(39, 34, 60, 0.85);
-  outline: none;
-  color: white;
-  transition: 0.5s;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-right: 10px;
-  width: 500px;
-}
-

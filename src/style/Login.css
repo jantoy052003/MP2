@@ -50,7 +50,7 @@
     font-weight: bold;
 }
 
-#input-text {
+#input-email, #input-password {
     border: 0;
     background: rgba(39, 34, 60, 0.85);
     outline: none;
