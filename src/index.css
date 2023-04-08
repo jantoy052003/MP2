@@ -27,7 +27,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: #00b3ff;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    box-shadow: 0 0 10px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff;
     transition: width 0.5s;
 }
 
