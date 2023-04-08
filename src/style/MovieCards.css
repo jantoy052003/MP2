@@ -26,4 +26,5 @@
 
 .btn-close {
     background: transparent url(/src/assets/x-icon-w.png)center/2em auto no-repeat!important;
+    transition: ease-out;
 }
