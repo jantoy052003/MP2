@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 import "./listItem.css"
 import MovieItems from "../MovieItems/MovieItems"

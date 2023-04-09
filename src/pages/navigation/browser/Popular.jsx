@@ -1,10 +1,11 @@
 import axios from "axios"
 import { useEffect, useRef, useState } from "react"
-import { Modal, Button, Pagination, Container, Row, Col }  from 'react-bootstrap';
+import { Modal, Button, Pagination, Container, Row, Col, Carousel }  from 'react-bootstrap';
 import MovieCards from '../../../components/MovieCards'
 import '../../../style/Popular.css'
 import SpidermanNWH from '../../../assets/Spiderman-NWH.jpg'
 import SpidermanNWH2 from '../../../assets/Spiderman-NWH2.jpg'
+import SpidermanNWH3 from '../../../assets/SNWH.jpg'
 import SNWH from '../../../assets/SNWH-titlecard.png'
 import YoutubeEmbed from '../../../components/YoutubeEmbed'
 
@@ -83,16 +84,29 @@ const Popular = () => {
                         </Modal>
                     </div>
                 </div>
-                <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active" data-bs-interval="10">
-                            <img src={SpidermanNWH} className="d-block w-100" alt="..." />
-                        </div>
-                        <div className="carousel-item" data-bs-interval="10">
-                            <img src={SpidermanNWH2} className="d-block w-100" alt="..." />
-                        </div> 
-                    </div>
-                </div>
+                <Carousel controls={false} fade={true} indicators={false}>
+                    <Carousel.Item interval={10000}>
+                        <img
+                        className="d-block w-100"
+                        src={SpidermanNWH}
+                        alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={10000}>
+                        <img
+                        className="d-block w-100"
+                        src={SpidermanNWH2}
+                        alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={10000}>
+                        <img
+                        className="d-block w-100"
+                        src={SpidermanNWH3}
+                        alt="Second slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
             </div>
             <Container className="mx-auto py-5 mt-5">
                 <Row className="d-flex flex-row">

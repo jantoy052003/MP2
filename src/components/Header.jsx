@@ -24,7 +24,7 @@ const Header = () => {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '200px' }}
+              style={{ maxHeight: '500px' }}
               navbarScroll
             >
               <Nav.Link id='header-nav' href="/home">Home</Nav.Link>
@@ -33,15 +33,15 @@ const Header = () => {
               <Nav.Link id='header-nav' href="/upcomingmovies">Upcoming Movies</Nav.Link>
               <Nav.Link id='header-nav' href="/mylist">My List</Nav.Link>
             </Nav>
-            <Form className="d-flex">
+            {/*<Form className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-light">Search</Button>
-            </Form>
+  <Button variant="outline-light">Search</Button>
+            </Form>*/}
           </Navbar.Collapse>
         </Container>
       </Navbar>

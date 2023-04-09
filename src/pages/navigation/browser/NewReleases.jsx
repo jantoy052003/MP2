@@ -1,7 +1,6 @@
 import React from 'react'
 import NewRelease from '../../../components/carouselItem/list/NewRelease'
 import '../../../style/NewReleases.css'
-import Carousel from 'react-bootstrap/Carousel';
 import JW1 from '../../../assets/JW1.jpg'
 
 

@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     color: white;
-    background: #16161D;
+    background: linear-gradient(#16161D, rgb(26, 23, 23));
 }
 
 #video-container {
@@ -11,6 +11,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    object-fit: contain;
 }
 
 #tc-container {
@@ -27,6 +28,18 @@
     width: 100%;
     z-index: 2;
     filter: drop-shadow(0px 0px 40px white);
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
+}
+
+@keyframes anime {
+    100%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
 }
 
 #btn-container {
@@ -97,7 +110,20 @@
 }
 
 #movie-carousel {
-    margin-top: -175px;
+    margin-top: -150px;
     z-index: 2;
     position: relative;
+}
+
+
+
+
+/* <--- responsive ---> */
+
+@media only screen and (max-width: 991px) {
+    #tc-container {
+        width: 200px;
+        height:200px;
+        top: 100px;
+    }
 }

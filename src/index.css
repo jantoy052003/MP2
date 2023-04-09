@@ -16,7 +16,7 @@ body {
 
 #header-nav {
     color: white;
-    position: relative;
+    font-weight: bold;
     text-shadow: 0 0 20px black,
     0 0 40px black,
     0 0 80px black,
@@ -26,19 +26,6 @@ body {
     0 0 1280px black;
 }
 
-#header-nav::after {
-    content: '';
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #00b3ff;
-    box-shadow: 0 0 10px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff;
-    transition: width 0.5s;
-}
-
 #header-nav:hover {
     color: #00b3ff;
     text-shadow: 0 0 10px #00b3ff,
@@ -46,10 +33,7 @@ body {
     0 0 40px #00b3ff,
     0 0 80px #00b3ff,
     0 0 100px #00b3ff;
-}
-
-#header-nav:hover::after {
-    width: 100%;
+    transition: all;
 }
 
 .headertp {
@@ -102,9 +86,3 @@ body {
 }
 
 
-
-/* <--- responsive ---> */
-
-@media only screen and (max-width: 991px) {
-
-}
