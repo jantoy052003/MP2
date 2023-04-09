@@ -18,11 +18,11 @@ const Fantasy = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${1065 + distance}px)`
+        listRef.current.style.transform = `translateX(${1400 + distance}px)`
     }
     if (direction === "right" && slideNumber < 4) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-1065 + distance}px)`
+      listRef.current.style.transform = `translateX(${-1400 + distance}px)`
     }
   }
   //____________________________________

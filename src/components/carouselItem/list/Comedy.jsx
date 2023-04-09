@@ -18,11 +18,11 @@ const Comedy = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${985 + distance}px)`
+        listRef.current.style.transform = `translateX(${1250 + distance}px)`
     }
     if (direction === "right" && slideNumber < 6) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-985 + distance}px)`
+      listRef.current.style.transform = `translateX(${-1250 + distance}px)`
     }
   }
   //____________________________________

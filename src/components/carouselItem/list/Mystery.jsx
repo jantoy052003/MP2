@@ -18,11 +18,11 @@ const Mystery = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${650 + distance}px)`
+        listRef.current.style.transform = `translateX(${930 + distance}px)`
     }
     if (direction === "right" && slideNumber < 2) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-650 + distance}px)`
+      listRef.current.style.transform = `translateX(${-930 + distance}px)`
     }
   }
   //____________________________________

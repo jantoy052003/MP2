@@ -18,11 +18,11 @@ const Action = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${1055 + distance}px)`
+        listRef.current.style.transform = `translateX(${1330 + distance}px)`
     }
     if (direction === "right" && slideNumber < 9) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-1055 + distance}px)`
+      listRef.current.style.transform = `translateX(${-1330 + distance}px)`
     }
   }
   //____________________________________

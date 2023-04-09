@@ -18,11 +18,11 @@ const Top10List = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${110 + distance}px)`
+        listRef.current.style.transform = `translateX(${280 + distance}px)`
     }
     if (direction === "right" && slideNumber < 2) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-110 + distance}px)`
+      listRef.current.style.transform = `translateX(${-280 + distance}px)`
     }
   }
   //____________________________________

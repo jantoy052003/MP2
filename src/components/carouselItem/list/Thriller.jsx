@@ -18,11 +18,11 @@ const Thriller = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${1020 + distance}px)`
+        listRef.current.style.transform = `translateX(${1285 + distance}px)`
     }
     if (direction === "right" && slideNumber < 8) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-1020 + distance}px)`
+      listRef.current.style.transform = `translateX(${-1285 + distance}px)`
     }
   }
   //____________________________________
