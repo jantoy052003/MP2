@@ -6,6 +6,36 @@ import Top10 from '../../../assets/top-10-w.png'
 
 const Top10List = () => {
 
+  // -------SWIPING ATTEMPT-------------
+  const [touchPosition, setTouchPosition] = useState(null)
+
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX
+    setTouchPosition(touchDown)
+  }
+
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition
+
+    if(touchDown === null) {
+        return
+    }
+
+    const currentTouch = e.touches[0].clientX
+    const diff = touchDown - currentTouch
+
+    if (diff > 5) {
+        next()
+    }
+
+    if (diff < -5) {
+        prev()
+    }
+
+    setTouchPosition(null)
+  }
+  //____________________________________
+
   //----------CAROUSEL ANIMATION--------
   const [isMoved, setIsMoved] = useState(false)
   const [slideNumber, setSlideNumber] = useState(0)
@@ -18,19 +48,19 @@ const Top10List = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-        listRef.current.style.transform = `translateX(${280 + distance}px)`
+        listRef.current.style.transform = `translateX(${235 + distance}px)`
     }
     if (direction === "right" && slideNumber < 2) {
       setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-280 + distance}px)`
+      listRef.current.style.transform = `translateX(${-235 + distance}px)`
     }
   }
   //____________________________________
 
   return (
-    <div className="list">
+    <div className="list" >
       <span className="listTitle"><img src={Top10} alt="" /></span>
-      <div className="wrapper">
+      <div className="wrapper" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
             <div className="container" ref={listRef}>             
               <Top10Items/>

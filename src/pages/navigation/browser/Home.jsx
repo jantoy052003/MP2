@@ -12,6 +12,7 @@ import Horror from "../../../components/carouselItem/list/Horror";
 import Mystery from "../../../components/carouselItem/list/Mystery";
 import Romance from "../../../components/carouselItem/list/Romance";
 import Thriller from "../../../components/carouselItem/list/Thriller";
+import Western from '../../../components/carouselItem/list/Western';
 import DS1 from '../../../assets/DS.jpg'
 import DS2 from '../../../assets/Doctor-Strange-2.jpg'
 import DS3 from '../../../assets/DS3.jpg'
@@ -85,6 +86,7 @@ const Home = () => {
         <Mystery />
         <Romance />
         <Thriller />
+        <Western />
       </div>
     </div>
   )
