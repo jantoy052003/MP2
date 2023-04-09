@@ -17,6 +17,7 @@ import DS1 from '../../../assets/DS.jpg'
 import DS2 from '../../../assets/DS2.jpg'
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import YoutubeEmbed from '../../../components/YoutubeEmbed'
 
 
 const Home = () => {
@@ -28,24 +29,27 @@ const Home = () => {
         <div id='tc-container'>
           <img id='DStitlecard' src={DSTitleCard} alt="" />
           <div id='btn-container'>
-            <Button id='btn-play' variant="light px-4 fw-bold" size="lg" onClick={() => setLgShow(true)}>Watch Trailer</Button>
-           {/*} <Modal
+            <Button id='btn-play' variant="light px-4 fw-bold" size="lg">Watch Now</Button>
+            <Button id='btn-mi' variant="light outline-light transparent text-light" size="lg" onClick={() => setLgShow(true)}>More Info</Button>
+            <Modal
               size="lg"
               show={lgShow}
               onHide={() => setLgShow(false)}
               aria-labelledby="overview"
             >
-            <iframe
-                  id="video-frame" 
-                  width="750px" 
-                  height="480px" 
-                  src="https://www.youtube.com/embed/CZI5V2VRc7s?modestbranding=1&controls=0&autoplay=1&mute=0&rel=0&amp;clip=UgkxGzBsSYsP3XNlqKAf6LmM5pbmyQeXRUMG&amp;clipt=ELgwGN_wAw" title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowFullScreen>
-                </iframe>
+              <Modal.Header closeButton>
+                <Modal.Title id="overview">
+                  Doctor Strange in the Multiverse of Madness
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <YoutubeEmbed embedId={"aWzlQ2N6qqg"} />
+                <div className='py-3'>
+                  Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.
+                </div>
+              </Modal.Body>
             </Modal>
-            {/*<Button id='btn-mi' variant="light outline-light transparent text-light" size="lg">More Info</Button>
+            
             {/*<div id='audio'>
               <img id='mute' src={Mute} alt="" />
               <img id='voice' src={Voice} alt="" />

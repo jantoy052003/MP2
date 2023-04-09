@@ -1,8 +1,13 @@
 import axios from "axios"
 import { useEffect, useRef, useState } from "react"
-import { Pagination, Container, Row, Col }  from 'react-bootstrap';
+import { Modal, Button, Pagination, Container, Row, Col }  from 'react-bootstrap';
 import MovieCards from '../../../components/MovieCards'
 import '../../../style/Popular.css'
+import SpidermanNWH from '../../../assets/Spiderman-NWH.jpg'
+import SpidermanNWH2 from '../../../assets/Spiderman-NWH2.jpg'
+import SNWH from '../../../assets/SNWH-titlecard.png'
+import YoutubeEmbed from '../../../components/YoutubeEmbed'
+
 
 let active = 1;
 let pages = [];
@@ -45,11 +50,51 @@ const Popular = () => {
         return
     },[page])
 
-    
+    const [lgShow, setLgShow] = useState(false);
 
     return (
-        <div className="pt-5 bg-dark">
-            <Container className="mx-auto">
+        <div className="bg-dark">
+            <div id="video-container">
+                <div id='tc-container'>
+                    <img id='DStitlecard' src={SNWH} alt="" />
+                    <div id='btn-container'>
+                        <Button id='btn-play' variant="light px-4 fw-bold" size="lg" 
+                            href="https://www.netflix.com/watch/81652327?trackId=255824129&tctx=0%2C1%2CNAPA%40%40%7C3b560941-a414-4fcf-97be-c50ded064152-19852757_titles%2F1%2F%2Fspiderman%20no%20way%20home%2F0%2F0%2CNAPA%40%40%7C3b560941-a414-4fcf-97be-c50ded064152-19852757_titles%2F1%2F%2Fspiderman%20no%20way%20home%2F0%2F0%2Cunknown%2C%2C3b560941-a414-4fcf-97be-c50ded064152-19852757%7C1%2CtitlesResults%2C%2CVideo%3A81652327%2CdetailsPagePlayButton">
+                            Watch Now
+                        </Button>
+                        <Button id='btn-mi' variant="light outline-light transparent text-light" size="lg" onClick={() => setLgShow(true)}>More Info</Button>
+                        <Modal
+                            size="lg"
+                            show={lgShow}
+                            onHide={() => setLgShow(false)}
+                            aria-labelledby="overview"
+                            >
+                            <Modal.Header closeButton>
+                                <Modal.Title id="overview">
+                                    Spider-Man: No Way Home
+                                </Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <YoutubeEmbed embedId={"rt-2cxAiPJk"} />
+                                <div className='py-3'>
+                                    Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
+                                </div>
+                            </Modal.Body>
+                        </Modal>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-bs-interval="10">
+                            <img src={SpidermanNWH} className="d-block w-100" alt="..." />
+                        </div>
+                        <div className="carousel-item" data-bs-interval="10">
+                            <img src={SpidermanNWH2} className="d-block w-100" alt="..." />
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <Container className="mx-auto py-5 mt-5">
                 <Row className="d-flex flex-row">
                     {movies.map((movie, index) => {
                         return (
@@ -72,7 +117,6 @@ const Popular = () => {
                     </Col>
                 </Row>
             </Container>
-            
         </div>
     )
 }
