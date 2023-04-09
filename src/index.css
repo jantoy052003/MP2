@@ -72,16 +72,39 @@ body {
     z-index: 10;
 }
 
-.headertp > div > img {
+.headertp img {
     width: 50px;
     height: 50px;
     margin-right: 50px;
     margin-left: 50px;
 }
 
+.form-control {
+    background-color: transparent;
+    backdrop-filter: blur(.20rem);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    backdrop-filter: blur(.20rem);
+    color: white;
+}
+
+.form-control::-ms-input-placeholder {
+    color: white!important;
+}
+
 #popular, #newreleases, #upcomingmovies, #mylist {
     width: 100%;
-    height: 250vh;
     color: white;
     background: #16161D;
+}
+
+
+
+/* <--- responsive ---> */
+
+@media only screen and (max-width: 991px) {
+
 }

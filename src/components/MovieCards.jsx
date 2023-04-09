@@ -18,7 +18,7 @@ const MovieCards = ({movie}) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="overview">
-            {movie.original_title}
+            {movie.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -49,11 +49,6 @@ const Home = () => {
                 </div>
               </Modal.Body>
             </Modal>
-            
-            {/*<div id='audio'>
-              <img id='mute' src={Mute} alt="" />
-              <img id='voice' src={Voice} alt="" />
-               </div>*/}
           </div>
         </div>
         <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
@@ -65,17 +60,6 @@ const Home = () => {
               <img src={DS2} className="d-block w-100" alt="..." />
             </div> 
           </div>
-        </div>
-        <div>
-            {/*<iframe
-                id="video-frame" 
-                width="100%" 
-                height="1000" 
-                src="https://www.youtube.com/embed/CZI5V2VRc7s?modestbranding=1&controls=0&autoplay=1&mute=0&rel=0&amp;clip=UgkxGzBsSYsP3XNlqKAf6LmM5pbmyQeXRUMG&amp;clipt=ELgwGN_wAw" title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen>
-              </iframe>*/}
         </div>
       </div>
       <div id='movie-carousel'>

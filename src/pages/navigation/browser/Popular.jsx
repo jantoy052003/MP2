@@ -54,8 +54,8 @@ const Popular = () => {
 
     return (
         <div className="bg-dark">
-            <div id="video-container">
-                <div id='tc-container'>
+            <div id="video-container1">
+                <div id='tc-container1'>
                     <img id='DStitlecard' src={SNWH} alt="" />
                     <div id='btn-container'>
                         <Button id='btn-play' variant="light px-4 fw-bold" size="lg" 

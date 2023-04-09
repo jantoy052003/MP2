@@ -50,11 +50,13 @@ const UpcomingMovies = () => {
         <div className="pt-5 bg-dark">
             <Container className="mx-auto">
                 <Row className="d-flex flex-row">
-                    {movies.map((movie, index) => {
-                        return (
-                            <MovieCards id="mc-container" key={index} movie={movie}></MovieCards> /*passing the movie component as prop, the key is used to get rid of the "Child" error in the console*/
-                         )
-                    })} 
+                    <Col>
+                        {movies.map((movie, index) => {
+                             return (
+                                <MovieCards id="mc-container" key={index} movie={movie}></MovieCards> /*passing the movie component as prop, the key is used to get rid of the "Child" error in the console*/
+                            )
+                         })} 
+                    </Col>
                 </Row>
             </Container>
             <Container fluid>
