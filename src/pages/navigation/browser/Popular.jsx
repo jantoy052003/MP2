@@ -8,6 +8,7 @@ import SpidermanNWH2 from '../../../assets/Spiderman-NWH2.jpg'
 import SpidermanNWH3 from '../../../assets/SNWH.jpg'
 import SNWH from '../../../assets/SNWH-titlecard.png'
 import YoutubeEmbed from '../../../components/YoutubeEmbed'
+import PopMovies from '../../../assets/pop-movies.png'
 
 
 let active = 1;
@@ -54,7 +55,7 @@ const Popular = () => {
     const [lgShow, setLgShow] = useState(false);
 
     return (
-        <div className="bg-dark">
+        <div id="popular" className="bg-dark">
             <div id="video-container1">
                 <div id='tc-container1'>
                     <img id='DStitlecard' src={SNWH} alt="" />
@@ -85,21 +86,21 @@ const Popular = () => {
                     </div>
                 </div>
                 <Carousel controls={false} fade={true} indicators={false}>
-                    <Carousel.Item interval={10000}>
+                    <Carousel.Item interval={5000}>
                         <img
                         className="d-block w-100"
                         src={SpidermanNWH}
                         alt="First slide"
                         />
                     </Carousel.Item>
-                    <Carousel.Item interval={10000}>
+                    <Carousel.Item interval={5000}>
                         <img
                         className="d-block w-100"
                         src={SpidermanNWH2}
                         alt="Second slide"
                         />
                     </Carousel.Item>
-                    <Carousel.Item interval={10000}>
+                    <Carousel.Item interval={5000}>
                         <img
                         className="d-block w-100"
                         src={SpidermanNWH3}
@@ -108,29 +109,32 @@ const Popular = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <Container className="mx-auto py-5 mt-5">
-                <Row className="d-flex flex-row">
-                    {movies.map((movie, index) => {
-                        return (
-                            <MovieCards id="mc-container" key={index} movie={movie}></MovieCards> /*passing the movie component as prop, the key is used to get rid of the "Child" error in the console*/
-                         )
-                    })} 
-                </Row>
-            </Container>
-            <Container fluid>
-                <Row>
-                    <Col>
-                        <Pagination className="d-flex justify-content-center m-5">
-                            {/**below is the final pagination form to make it "flexible" in case API total changes */}
-                            {Array.from(Array(pages).keys()).map((pageNum) => {
-                                return (
-                                    <Pagination.Item key={pageNum + 1} active={page === pageNum + 1} onClick={() => setPage(pageNum + 1)}>{pageNum + 1}</Pagination.Item>
-                                )
-                            })}
-                        </Pagination>
-                    </Col>
-                </Row>
-            </Container>
+            <div id="pagination-container">
+                <img className="paginationTitle" src={PopMovies} alt="" />
+                <Container>
+                    <Row className="d-flex flex-row justify-content-center">
+                        {movies.map((movie, index) => {
+                            return (
+                                <MovieCards id="mc-container" key={index} movie={movie}></MovieCards> /*passing the movie component as prop, the key is used to get rid of the "Child" error in the console*/
+                            )
+                        })} 
+                    </Row>
+                </Container>
+                <Container fluid>
+                    <Row>
+                        <Col>
+                            <Pagination className="d-flex justify-content-center m-5">
+                                {/**below is the final pagination form to make it "flexible" in case API total changes */}
+                                {Array.from(Array(pages).keys()).map((pageNum) => {
+                                    return (
+                                        <Pagination.Item key={pageNum + 1} active={page === pageNum + 1} onClick={() => setPage(pageNum + 1)}>{pageNum + 1}</Pagination.Item>
+                                    )
+                                })}
+                            </Pagination>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </div>
     )
 }
