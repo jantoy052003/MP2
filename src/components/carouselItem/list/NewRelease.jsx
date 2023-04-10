@@ -17,19 +17,11 @@ const NewRelease = () => {
     console.log(distance);
     if (direction === "left" && slideNumber > 0) {
         setSlideNumber(slideNumber - 1)
-<<<<<<< HEAD
         listRef.current.style.transform = `translateX(${150 + distance}px)`
     }
     if (direction === "right" && slideNumber < 2) {
       setSlideNumber(slideNumber + 1)
       listRef.current.style.transform = `translateX(${-150 + distance}px)`
-=======
-        listRef.current.style.transform = `translateX(${228 + distance}px)`
-    }
-    if (direction === "right" && slideNumber < 2) {
-      setSlideNumber(slideNumber + 1)
-      listRef.current.style.transform = `translateX(${-228 + distance}px)`
->>>>>>> b52ad43280713e89c258fb13bff25e38cd5b0270
     }
   }
   //____________________________________
