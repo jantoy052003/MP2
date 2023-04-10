@@ -63,3 +63,16 @@
     color: #00b3ff;
     cursor: pointer;
 }
+
+#signup-modal {
+    width: 400px!important;
+    height: 450px!important;
+    top: 0;
+    margin-top: 150px;
+    --bs-modal-bg: rgba(0, 0, 0, 0.50)!important;
+    --bs-modal-box-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 100px #00b3ff!important;
+}

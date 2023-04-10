@@ -23,7 +23,7 @@ body {
     0 0 160px black,
     0 0 320px black,
     0 0 640px black,
-    0 0 1280px black;
+    0 0 1280px black!important;
 }
 
 #header-nav:hover {
@@ -32,7 +32,27 @@ body {
     0 0 20px #00b3ff,
     0 0 40px #00b3ff,
     0 0 80px #00b3ff,
-    0 0 100px #00b3ff;
+    0 0 100px #00b3ff!important;
+    transition: all;
+}
+
+.nav-link {
+    text-shadow: 0 0 20px black,
+    0 0 40px black,
+    0 0 80px black,
+    0 0 160px black,
+    0 0 320px black,
+    0 0 640px black,
+    0 0 1280px black!important;
+}
+
+.nav-link:hover {
+    color: #00b3ff;
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 100px #00b3ff!important;
     transition: all;
 }
 
@@ -63,6 +83,19 @@ body {
     margin-left: 50px;
 }
 
+.dropdown-menu {
+    --bs-dropdown-bg: rgba(0, 0, 0, 0.8)!important;
+    --bs-dropdown-color: white!important;
+    --bs-dropdown-link-color: white!important;
+    margin-top: 12.5px!important;
+}
+
+.drop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(.20rem);
+    transform: translateY(100px);
+}
+
 .form-control {
     background-color: transparent;
     backdrop-filter: blur(.20rem);
@@ -85,4 +118,17 @@ body {
     background: #16161D;
 }
 
+#carousel-img {
+    -webkit-animation: backdrop 10s;
+    -o-animation: backdrop 10s;
+    animation: backdrop 10s ;
+}
+@keyframes backdrop {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
 

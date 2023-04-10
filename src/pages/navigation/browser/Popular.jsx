@@ -61,7 +61,7 @@ const Popular = () => {
                     <img id='DStitlecard' src={SNWH} alt="" />
                     <div id='btn-container'>
                         <Button id='btn-play' variant="light px-4 fw-bold" size="lg" 
-                            href="https://www.netflix.com/watch/81652327?trackId=255824129&tctx=0%2C1%2CNAPA%40%40%7C3b560941-a414-4fcf-97be-c50ded064152-19852757_titles%2F1%2F%2Fspiderman%20no%20way%20home%2F0%2F0%2CNAPA%40%40%7C3b560941-a414-4fcf-97be-c50ded064152-19852757_titles%2F1%2F%2Fspiderman%20no%20way%20home%2F0%2F0%2Cunknown%2C%2C3b560941-a414-4fcf-97be-c50ded064152-19852757%7C1%2CtitlesResults%2C%2CVideo%3A81652327%2CdetailsPagePlayButton">
+                            href="https://www.youtube.com/embed/3TYABnOSgCE?controls=0&amp;clip=UgkxjN0j4Wrcm4q-fwi_7F7fxzuo0XsKOcsm&amp;clipt=EOlJGMmeBA&modestbranding=1&controls=1&crel=0&autoplay=1&showinfo=0&fullscreen=1">
                             Watch Now
                         </Button>
                         <Button id='btn-mi' variant="light outline-light transparent text-light" size="lg" onClick={() => setLgShow(true)}>More Info</Button>
@@ -85,9 +85,10 @@ const Popular = () => {
                         </Modal>
                     </div>
                 </div>
-                <Carousel controls={false} fade={true} indicators={false}>
+                <Carousel controls={false} fade={true} indicators={false} pause={false}>
                     <Carousel.Item interval={5000}>
                         <img
+                        id="carousel-img"
                         className="d-block w-100"
                         src={SpidermanNWH}
                         alt="First slide"
@@ -95,6 +96,7 @@ const Popular = () => {
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
+                        id="carousel-img"
                         className="d-block w-100"
                         src={SpidermanNWH2}
                         alt="Second slide"
@@ -102,6 +104,7 @@ const Popular = () => {
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         <img
+                        id="carousel-img"
                         className="d-block w-100"
                         src={SpidermanNWH3}
                         alt="Second slide"

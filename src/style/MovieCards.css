@@ -19,9 +19,14 @@
 .modal {
     display: flex;
     justify-content: center;
-    --bs-modal-bg: rgba(0, 0, 0, 0.8)!important;
+    --bs-modal-bg: rgba(43, 42, 42, 0.8)!important;
     backdrop-filter: blur(.20rem)!important;
     color: white;
+}
+
+.modal-content {
+    border-radius: 15px!important;
+    
 }
 
 .btn-close {

@@ -23,10 +23,12 @@ const MovieCards = ({movie}) => {
         </Modal.Header>
         <Modal.Body>
           <YoutubeEmbed embedId={movie.key} />
+        </Modal.Body>
+        <Modal.Footer>
           <div className='py-3'>
             {movie.overview}
           </div>
-        </Modal.Body>
+        </Modal.Footer>
       </Modal>
     </div>
   )

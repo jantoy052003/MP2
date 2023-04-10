@@ -3,7 +3,9 @@ import "../list/list.css"
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons';
 import NewReleasesItems from '../listItem/NewReleasesItems';
 
+
 const NewRelease = () => {
+  
   
   //----------CAROUSEL ANIMATION--------
   const [isMoved, setIsMoved] = useState(false)
@@ -30,8 +32,8 @@ const NewRelease = () => {
     <div className="list">
       <div className="wrapper">
         <ArrowBackIosOutlined className="sliderArrow left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
-            <div className="container" ref={listRef}>             
-              <NewReleasesItems />
+            <div className="container" ref={listRef}>
+              <NewReleasesItems />         
             </div>
         <ArrowForwardIosOutlined className="sliderArrow right" onClick={()=>handleClick("right")}/>
       </div>

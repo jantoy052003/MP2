@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container, Form, Button } from 'react-bootstrap';
+import { Nav, Navbar, Container, NavDropdown, Form, Button } from 'react-bootstrap';
 import { useState } from 'react';
 import Logo from '../assets/MP2-logo.png'
 
@@ -12,6 +12,7 @@ const Header = () => {
       setNavbar(false)
     }
   };
+
 
   window.addEventListener('scroll', changeBackground);
 
@@ -43,6 +44,9 @@ const Header = () => {
   <Button variant="outline-light">Search</Button>
             </Form>*/}
           </Navbar.Collapse>
+          <NavDropdown className='ms-5 fw-bold' title="Profile" id="basic-nav-dropdown">
+              <NavDropdown.Item className='' href="/">Sign out</NavDropdown.Item>
+            </NavDropdown>
         </Container>
       </Navbar>
     </div>

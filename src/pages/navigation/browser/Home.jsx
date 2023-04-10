@@ -30,7 +30,7 @@ const Home = () => {
         <div id='tc-container'>
           <img id='DStitlecard' src={DSTitleCard} alt="" />
           <div id='btn-container'>
-            <Button id='btn-play' variant="light px-4 fw-bold" size="lg">Watch Now</Button>
+            <Button id='btn-play' variant="light px-4 fw-bold" size="lg" href='https://www.youtube.com/embed/1CAimOR2db0?modestbranding=1&controls=1&crel=0&autoplay=1&showinfo=0&fullscreen=1'>Watch Now</Button>
             <Button id='btn-mi' variant="light outline-light transparent text-light" size="lg" onClick={() => setLgShow(true)}>More Info</Button>
             <Modal
               size="lg"
@@ -52,9 +52,10 @@ const Home = () => {
             </Modal>
           </div>
         </div>
-        <Carousel controls={false} fade={true} indicators={false}>
+        <Carousel controls={false} fade={true} indicators={false} pause={false}>
           <Carousel.Item interval={5000}>
             <img
+            id='carousel-img'
               className="d-block w-100"
               src={DS1}
               alt="First slide"
@@ -62,6 +63,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={5000}>
             <img
+              id='carousel-img'
               className="d-block w-100"
               src={DS2}
               alt="Second slide"
@@ -69,6 +71,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={5000}>
             <img
+            id='carousel-img'
               className="d-block w-100"
               src={DS3}
               alt="Second slide"
