@@ -4,6 +4,8 @@ import axios from "axios"
 import "./listItem.css"
 import MovieItems from "../MovieItems/MovieItems"
 
+
+
 const NewReleasesItems = () => {
     const [movies, setMovies] =useState([])
 

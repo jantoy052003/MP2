@@ -16,3 +16,26 @@
     left: 50px;
     position: absolute;
 }
+
+#pagination-container {
+    margin-top: -150px;
+    z-index: 2;
+    position: relative;
+}
+
+.paginationTitle {
+    color: white;
+    margin-left: 100px;
+    height: 50px;
+    margin-bottom: -20px;
+    filter: drop-shadow(0px 0px 40px white);
+}
+
+.pagination {
+    --bs-pagination-bg: rgba(225, 225, 225, 0.8)!important;
+    --bs-pagination-color: black!important;
+    --bs-pagination-hover-color: white!important;
+    --bs-pagination-hover-bg: transparent!important;
+    --bs-pagination-hover-bg: #00b3ff!important;
+    --bs-pagination-active-bg: #00b3ff!important;
+}

@@ -53,21 +53,21 @@ const Home = () => {
           </div>
         </div>
         <Carousel controls={false} fade={true} indicators={false}>
-          <Carousel.Item interval={10000}>
+          <Carousel.Item interval={5000}>
             <img
               className="d-block w-100"
               src={DS1}
               alt="First slide"
             />
           </Carousel.Item>
-          <Carousel.Item interval={10000}>
+          <Carousel.Item interval={5000}>
             <img
               className="d-block w-100"
               src={DS2}
               alt="Second slide"
             />
           </Carousel.Item>
-          <Carousel.Item interval={10000}>
+          <Carousel.Item interval={5000}>
             <img
               className="d-block w-100"
               src={DS3}
