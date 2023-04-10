@@ -9,7 +9,7 @@ import Cards from '../../../components/backdrops/Cards'
 import CarouselMovies from '../../../components/backdrops/CarouselMovies'
 
 
-const NewReleases = ({movie2}) => {
+const NewReleases = () => {
 
   //-----handleClick test----
   // const [active, setActive] = useState(false);
@@ -30,7 +30,7 @@ const NewReleases = ({movie2}) => {
               <img src= {active ? `https://image.tmdb.org/t/p/w500`+ movie2.backdrop_path : JW1} className="d-block w-100" alt="" />
             </div> */}
             <div className="carousel-item active" data-bs-interval="5">
-              <img src={netflix} className="d-block w-100" alt="..." />
+              <img src={JW1} className="d-block w-100" alt="..." />
             </div> 
           </div>
         </div>
