@@ -10,7 +10,7 @@ const NewReleasesItems = () => {
     const [movies, setMovies] =useState([])
 
     async function getMovies() {
-      const res = await axios.get(`https://mp2-api-json-server.onrender.com/movies?_start=9&_limit=10&_sort=release_date&_order=desc`) //change this if we want to display other categories in carousel view
+      const res = await axios.get(`https://mp2-api-json-server.onrender.com/movies?_start=8&_limit=10&_sort=release_date&_order=desc`) //change this if we want to display other categories in carousel view
       setMovies(res.data)
     }
   
