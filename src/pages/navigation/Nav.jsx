@@ -5,7 +5,7 @@ import routes from "../../routes";
 const Nav = () => {
   return (
     <>
-      <Header />
+      <Header/>
       <Routes>
           {routes[1].children.map((route, index) => {
             return <Route key={index} path={route.path} element={route.element} exact />

@@ -1,9 +1,14 @@
-import React from 'react'
+import Carousel from 'react-multi-carousel'
+import NewReleasesItems from '../carouselItem/listItem/NewReleasesItems';
+import "react-multi-carousel/lib/styles.css";
+import Card from 'react-bootstrap/Card'
 
-const NewReleasesLayout = () => {
+
+
+const NewReleasesLayout = ({movie}) => {
   return (
-    <div>
-      
+    <div id='newreleases'>
+   
     </div>
   )
 }

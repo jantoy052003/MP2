@@ -7,7 +7,7 @@ import NewReleases from './pages/navigation/browser/NewReleases'
 import UpcomingMovies from './pages/navigation/browser/UpcomingMovies'
 import MyList from './pages/navigation/browser/MyList'
 
-const routes = [
+const Routes = [
   {
     path: "/",
     element: <Login />
@@ -40,4 +40,4 @@ const routes = [
   }
 ]
 
-export default routes
+export default Routes
