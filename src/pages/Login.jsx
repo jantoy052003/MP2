@@ -3,6 +3,7 @@ import Logo from '../assets/MP2-logo.png'
 import { Form, Button, Modal } from 'react-bootstrap'
 import React, { useState } from 'react'
 import '../style/Login.css'
+import Footer from '../components/Footer'
 
 const Login = () => {
   const initialForm = {
@@ -31,7 +32,8 @@ const Login = () => {
 
 
   return (
-    <div className='login-container d-flex justify-content-center'>
+    <>
+      <div className='login-container d-flex justify-content-center'>
       <img src={collageBG} alt="" />
       <div id='header-1' className='d-flex w-100'>
         <img src={Logo} alt="Logo" className='mt-3' />
@@ -111,6 +113,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useRef, useState } from "react"
 import { Pagination, Container, Row, Col }  from 'react-bootstrap';
 import MovieCards from '../../../components/MovieCards'
+import Footer from '../../../components/Footer'
 // import '../../../style/UpcomingMovies.css' //in case you will be using its own css file for styling
 
 //we can comment out/ delete the pagination since we only display 9 upcoming movies
@@ -23,11 +24,8 @@ const UpcomingMovies = () => {
     const total = useRef(0)
 
     async function getMovies(){
-        const res = await axios.get(`https://mp2-api-json-server.onrender.com/movies?_start=0&_limit=9&_sort=release_date&_order=desc`)
-        
-        
+        const res = await axios.get(`https://mp2-api-json-server.onrender.com/movies?_start=0&_limit=9&_sort=release_date&_order=desc`)  
         setMovies(res.data)
-        // console.table(res.data);
     }
 
     // async function getTotalMovies() {
@@ -73,7 +71,7 @@ const UpcomingMovies = () => {
                     </Col>
                 </Row>
             </Container>
-            
+            <Footer/>
         </div>
     )
 }

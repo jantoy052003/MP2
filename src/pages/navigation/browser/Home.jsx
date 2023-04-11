@@ -19,7 +19,7 @@ import DS3 from '../../../assets/DS3.jpg'
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import YoutubeEmbed from '../../../components/YoutubeEmbed'
-
+import Footer from '../../../components/Footer'
 
 const Home = () => {
   const [lgShow, setLgShow] = useState(false);
@@ -91,6 +91,7 @@ const Home = () => {
         <Thriller />
         <Western />
       </div>
+      <Footer/>
     </div>
   )
 }
