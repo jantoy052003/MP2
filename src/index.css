@@ -132,3 +132,28 @@ body {
     }
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.footer > nav > a {
+    margin: .2em;
+}
+
+.copyright {
+    font-size: .7rem;
+    color: #00b3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+
+}

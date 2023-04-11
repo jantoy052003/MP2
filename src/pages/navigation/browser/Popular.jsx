@@ -9,7 +9,7 @@ import SpidermanNWH3 from '../../../assets/SNWH.jpg'
 import SNWH from '../../../assets/SNWH-titlecard.png'
 import YoutubeEmbed from '../../../components/YoutubeEmbed'
 import PopMovies from '../../../assets/pop-movies.png'
-
+import Footer from '../../../components/Footer'
 
 let active = 1;
 let pages = [];
@@ -138,6 +138,7 @@ const Popular = () => {
                     </Row>
                 </Container>
             </div>
+            <Footer/>
         </div>
     )
 }
