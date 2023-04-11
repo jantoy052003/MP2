@@ -32,10 +32,10 @@ const Routes = [
         path: "/upcomingmovies",
          element: <UpcomingMovies />,
       },
-      {
+      {/*
         path: "/mylist",
          element: <MyList />,
-      }
+    */ }
     ]
   }
 ]

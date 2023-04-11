@@ -8,9 +8,10 @@ const UpcomingMoviesLayout = ({movie}) => {
         <img src={`https://www.themoviedb.org/t/p/original`+ movie.backdrop_path} alt="" />
       </div>
       <div id='movie-info'>
-        <img src={`https://image.tmdb.org/t/p/w500/`+ movie.poster_path} alt="" />
+        <img src={`https://www.themoviedb.org/t/p/original/`+ movie.poster_path} alt="" />
         <div id='info-overview'>
           <h3>{movie.title}</h3>
+          <h6>Release Date: {movie.release_date}</h6>
           <br />
           <p>{movie.overview}</p>
         </div>

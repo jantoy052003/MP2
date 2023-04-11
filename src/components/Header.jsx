@@ -33,8 +33,9 @@ const Header = () => {
               <Nav.Link id='header-nav' href="/popular">Popular</Nav.Link>
               <Nav.Link id='header-nav' href="/newreleases">New Releases</Nav.Link>
               <Nav.Link id='header-nav' href="/upcomingmovies">Upcoming Movies</Nav.Link>
-              <Nav.Link id='header-nav' href="/mylist">My List</Nav.Link>
             </Nav>
+            {/*}  <Nav.Link id='header-nav' href="/mylist">My List</Nav.Link>
+            
             {/*<Form className="d-flex">
               <Form.Control
                 type="search"

@@ -47,8 +47,8 @@
     margin-bottom: 350px;
     margin-left: 150px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -67,8 +67,8 @@
     margin-bottom: 350px;
     margin-left: 400px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -87,8 +87,8 @@
     margin-bottom: 350px;
     margin-left: 1000px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -107,8 +107,8 @@
     margin-bottom: 350px;
     margin-left: 550px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -127,8 +127,8 @@
     margin-bottom: 350px;
     margin-left: 250px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -147,8 +147,8 @@
     margin-bottom: 350px;
     margin-left: 550px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -166,8 +166,9 @@
     width: 150px;
     margin-bottom: 350px;
     margin-left: 1000px;
-    border-radius: 25px;    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    border-radius: 25px;    
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -186,8 +187,9 @@
     margin-bottom: 350px;
     margin-left: 100px;
     border-radius: 25px;
-    border-radius: 25px;    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    border-radius: 25px;    
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -205,8 +207,9 @@
     margin-bottom: 350px;
     margin-left: 100px;
     border-radius: 25px;
-    border-radius: 25px;    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    border-radius: 25px;    
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
@@ -224,8 +227,8 @@
     margin-bottom: 350px;
     margin-left: 100px;
     border-radius: 25px;
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation: anime 2s infinite ease-in-out alternate;
+    -webkit-animation: anime 2s infinite ease-in-out alternate;
 }
 
 @keyframes anime {
