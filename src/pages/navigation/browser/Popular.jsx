@@ -138,7 +138,6 @@ const Popular = () => {
                     </Row>
                 </Container>
             </div>
-            <Footer/>
         </div>
     )
 }

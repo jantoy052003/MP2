@@ -89,9 +89,7 @@ const Home = () => {
         <Mystery />
         <Romance />
         <Thriller />
-        <Western />
       </div>
-      <Footer/>
     </div>
   )
 }

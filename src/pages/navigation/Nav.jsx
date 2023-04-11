@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { Routes, Route } from 'react-router-dom'
 import routes from "../../routes";
 
@@ -11,8 +12,9 @@ const Nav = () => {
             return <Route key={index} path={route.path} element={route.element} exact />
           })}
       </Routes>
+      <Footer/>
     </>
-  )
+  ) 
 }
 
 export default Nav
