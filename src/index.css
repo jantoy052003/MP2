@@ -155,8 +155,24 @@ body {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
-    
+    #header{
+        margin-top: 130px;
+        justify-content: start;
+        position: absolute;
+    }
+
+   #header-nav{
+    padding-top: 2px;
+   }
+
+  .navbar-toggler-icon, .navbar-toggler{
+    background-color: #00b3ff;
+  }
+
+  .headertp {
+    position: absolute;
+  }
 
 }

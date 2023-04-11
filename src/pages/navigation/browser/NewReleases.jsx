@@ -22,7 +22,7 @@ import MSposter from '../../../assets/MSposter.jpg'
 import Shazamposter from '../../../assets/Shazamposter.jpg'
 import BMposter from '../../../assets/BMposter.jpg'
 import TMEposter from '../../../assets/TMEposter.jpg'
-
+import Footer from '../../../components/Footer'
 
 
 const NewReleases = ({movie}) => {
@@ -198,7 +198,7 @@ const NewReleases = ({movie}) => {
         </Carousel>
         <img className="NRTitle" src={NR} alt="" />
         <NewRelease />
-      </div>i
+      </div>
     </div>
   )
 }
